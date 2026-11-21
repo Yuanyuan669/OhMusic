@@ -1,0 +1,8 @@
+{
+  "modelVersion": "5.0.0",
+  "license": "ISC",
+  "name": "ohmusic",
+  "description": "OhMusic: NetEase web player + local music player for OpenHarmony",
+  "version": "0.1.0",
+  "dependencies": {}
+}

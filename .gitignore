@@ -1,0 +1,24 @@
+# Build outputs and caches
+build/
+**/build/
+.hvigor/
+**/.hvigor/
+oh_modules/
+**/oh_modules/
+build-artifacts/
+*.hap
+*.hsp
+*.app
+*.log
+
+# Machine-specific
+local.properties
+scripts/env.local.sh
+
+# Signing material and private keys
+signing/
+*.p12
+*.p7b
+*.cer
+*.key
+*.pem
