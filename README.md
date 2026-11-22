@@ -14,12 +14,14 @@ OpenHarmony 音乐应用：网易云音乐网页播放器 + 本地媒体库播�
 需要 OpenHarmony SDK API 11 和 hvigor 3.2.4：
 
 ```powershell
-$env:OHOS_BASE_SDK_HOME='D:\ohos-tools\sdk'
-$env:NODE_PATH='D:\ohos-tools\hvigor-3.2.4\node_modules'
-& 'D:\DevEcoStudio\tools\node\node.exe' `
-  'D:\ohos-tools\hvigor-3.2.4\node_modules\@ohos\hvigor\bin\hvigor-simple.js' `
+$env:OHOS_BASE_SDK_HOME="$env:OHOS_TOOLS/sdk"
+$env:NODE_PATH="$env:OHOS_TOOLS/hvigor-3.2.4/node_modules"
+& "$env:DEVECO_HOME/tools/node/node.exe" `
+  "$env:OHOS_TOOLS/hvigor-3.2.4/node_modules/@ohos/hvigor/bin/hvigor-simple.js" `
   --mode module -p product=default -p buildMode=debug assembleHap
 ```
+
+工具链变量（`OHOS_TOOLS` / `DEVECO_HOME` 等）的约定见 `ohos-device/docs/ENVIRONMENT.md` §零。
 
 HAP 输出：`web/build/default/outputs/default/web-default-unsigned.hap`。
 
